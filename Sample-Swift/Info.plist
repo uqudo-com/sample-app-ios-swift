@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+    <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeIconFiles</key>
+            <array/>
+            <key>CFBundleTypeName</key>
+            <string>com.adobe.pdf</string>
+            <key>LSHandlerRank</key>
+            <string>Owner</string>
+            <key>LSItemContentTypes</key>
+            <array>
+                <string>com.adobe.pdf</string>
+            </array>
+        </dict>
+    </array>
+    <key>NFCReaderUsageDescription</key>
+    <string>$(PRODUCT_NAME) Would like to uses NFC to scan passports</string>
+    <key>NSCameraUsageDescription</key>
+    <string>$(PRODUCT_NAME) Would like to access the Camera to scan your ID</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>$(PRODUCT_NAME) Would like to access the Photo Library to save your ID</string>
+    <key>UIAppFonts</key>
+    <array>
+        <string>Poppins-Regular.ttf</string>
+        <string>Poppins-Light.ttf</string>
+        <string>Poppins-Medium.ttf</string>
+        <string>Poppins-Bold.ttf</string>
+        <string>Poppins-SemiBold.ttf</string>
+    </array>
+    <key>UQApiBaseURL</key>
+    <string>https://id.dev.uqudo.io</string>
+    <key>com.apple.developer.nfc.readersession.formats</key>
+    <array>
+        <string>NDEF</string>
+        <string>TAG</string>
+    </array>
+    <key>com.apple.developer.nfc.readersession.iso7816.select-identifiers</key>
+    <array>
+        <string>A0000002471001</string>
+        <string>A0000002472001</string>
+        <string>00000000000000</string>
+    </array>
+</dict>
+</plist>
