@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7264EDC82AB9D24A007B26ED /* MyAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7264EDC72AB9D249007B26ED /* MyAccessToken.swift */; };
+		728CD16D2B1039D40066F2FD /* UqudoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 728CD16C2B1039D40066F2FD /* UqudoSDK */; };
+		728CD1702B103A590066F2FD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 728CD16F2B103A590066F2FD /* Alamofire */; };
+		728CD1732B10415B0066F2FD /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 728CD1722B10415B0066F2FD /* OpenSSL */; };
 		72C7E4D92AB9C00B00BE84D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7E4D82AB9C00B00BE84D6 /* AppDelegate.swift */; };
 		72C7E4DB2AB9C00B00BE84D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7E4DA2AB9C00B00BE84D6 /* SceneDelegate.swift */; };
 		72C7E4DD2AB9C00B00BE84D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7E4DC2AB9C00B00BE84D6 /* ViewController.swift */; };
@@ -44,25 +47,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				728CD1732B10415B0066F2FD /* OpenSSL in Frameworks */,
+				728CD16D2B1039D40066F2FD /* UqudoSDK in Frameworks */,
+				728CD1702B103A590066F2FD /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D56A741D5062A7F5587CFB3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		72C7E4CC2AB9C00B00BE84D6 = {
 			isa = PBXGroup;
 			children = (
 				72C7E4D72AB9C00B00BE84D6 /* Sample-Swift */,
 				72C7E4D62AB9C00B00BE84D6 /* Products */,
-				1D56A741D5062A7F5587CFB3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +109,11 @@
 			dependencies = (
 			);
 			name = "Sample-Swift";
+			packageProductDependencies = (
+				728CD16C2B1039D40066F2FD /* UqudoSDK */,
+				728CD16F2B103A590066F2FD /* Alamofire */,
+				728CD1722B10415B0066F2FD /* OpenSSL */,
+			);
 			productName = "Sample-Swift";
 			productReference = 72C7E4D52AB9C00B00BE84D6 /* Sample-Swift.app */;
 			productType = "com.apple.product-type.application";
@@ -140,6 +143,11 @@
 				Base,
 			);
 			mainGroup = 72C7E4CC2AB9C00B00BE84D6;
+			packageReferences = (
+				728CD16B2B1039D40066F2FD /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */,
+				728CD16E2B103A590066F2FD /* XCRemoteSwiftPackageReference "Alamofire" */,
+				728CD1712B10415B0066F2FD /* XCRemoteSwiftPackageReference "OpenSSL" */,
+			);
 			productRefGroup = 72C7E4D62AB9C00B00BE84D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -336,7 +344,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -371,7 +379,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,6 +419,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		728CD16B2B1039D40066F2FD /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uqudo-io/SPM-UqudoSDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.2;
+			};
+		};
+		728CD16E2B103A590066F2FD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+		728CD1712B10415B0066F2FD /* XCRemoteSwiftPackageReference "OpenSSL" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/OpenSSL.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.4000;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		728CD16C2B1039D40066F2FD /* UqudoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 728CD16B2B1039D40066F2FD /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */;
+			productName = UqudoSDK;
+		};
+		728CD16F2B103A590066F2FD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 728CD16E2B103A590066F2FD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		728CD1722B10415B0066F2FD /* OpenSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 728CD1712B10415B0066F2FD /* XCRemoteSwiftPackageReference "OpenSSL" */;
+			productName = OpenSSL;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 72C7E4CD2AB9C00B00BE84D6 /* Project object */;
 }

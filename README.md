@@ -14,6 +14,11 @@ You can use CocoaPods to install Uqudo SDK by adding the following to your Podfi
 pod 'UqudoSDK', 'your prefer version ',  #recommended to use the latest version
 pod 'OpenSSL-Universal', '1.1.1700'
 ```
-
 Note: If the CocoaPods cache is out of date, you may need to run
 `pod repo update` before the `pod install` command.
+
+### Swift Package Manager
+You can use SPM to installed SDK and dependencies by pointing to this repo's URL.
+https://github.com/uqudo-io/SPM-UqudoSDK.git 
+https://github.com/krzyzanowskim/OpenSSL.git
+
