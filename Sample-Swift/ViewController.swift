@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ExceptionCatcher
 
 class ViewController: UIViewController, UQBuilderControllerDelegate {
 
@@ -177,40 +178,42 @@ class ViewController: UIViewController, UQBuilderControllerDelegate {
     
     func performingEnrollment() {
         do {
-            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-                // Handle the case where the app delegate is not found
-                return
+            _ = try ExceptionCatcher.catch {
+                guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                    // Handle the case where the app delegate is not found
+                    return
+                }
+                
+                let builderController = UQBuilderController.defaultBuilder()
+                
+                // Config the main builder. UQBuilderController is a singleton since we already initiated the build in AppDelegate; next time we will call defaultBuilder
+                builderController.delegate = self
+                
+                // Pass an instance of the app view controller
+                builderController.appViewController = self
+                
+                // Define appearance mode. Available options are LIGHT, DARK, and SYSTEM.
+                builderController.setAppearanceMode(LIGHT)
+                
+                // Config the enrollment builder
+                let enrollmentBuilder = self.createEnrollmentBuilder(authorizationToken: appDelegate.accessToken!)
+                
+                // Add enrollment to the main builder
+                builderController.setEnrollment(enrollmentBuilder)
+                
+                // Start enrollment flow
+                // AccessToken is required; if no token, UQExceptionInvalidToken will be thrown
+                builderController.performEnrollment()
             }
-            
-            print("accessToken: \(String(describing: appDelegate.accessToken))")
-            
-            let builderController = UQBuilderController.defaultBuilder()
-            
-            // Config the main builder. UQBuilderController is a singleton since we already initiated the build in AppDelegate; next time we will call defaultBuilder
-            builderController.delegate = self
-            
-            // Pass an instance of the app view controller
-            builderController.appViewController = self
-            
-            // Define appearance mode. Available options are LIGHT, DARK, and SYSTEM.
-            builderController.setAppearanceMode(LIGHT)
-            
-            // Config the enrollment builder
-            let enrollmentBuilder = self.createEnrollmentBuilder(authorizationToken: appDelegate.accessToken!)
-            
-            // Add enrollment to the main builder
-            builderController.setEnrollment(enrollmentBuilder)
-            
-            // Start enrollment flow
-            // AccessToken is required; if no token, UQExceptionInvalidToken will be thrown
-            try builderController.performEnrollment()
         } catch let error as NSError {
-            print("Error: \(error.localizedDescription)")
-            // Handle the error as needed, e.g., show an alert
-
+            // Manage exception here
+            // Error Domain represent the exeption name: [IllegalStateException, UnsupportedDeviceException, UnsupportedOperationException]
+            // Error Description represent exception reason
+            print("Error:", error.localizedDescription)
+            debugPrint(error)
+            self.showExceptionError(title: error.domain, message: error.localizedDescription)
         }
     }
-
     
     @IBAction func stratOnBording(_ sender: UIButton) {
         self.performingEnrollment()
@@ -234,4 +237,10 @@ extension ViewController {
         print(error)
     }
     
+    
+    func showExceptionError(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Continue", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 }

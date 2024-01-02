@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7263EF652B4415FC00A2D176 /* ExceptionCatcher in Frameworks */ = {isa = PBXBuildFile; productRef = 7263EF642B4415FC00A2D176 /* ExceptionCatcher */; };
 		7264EDC82AB9D24A007B26ED /* MyAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7264EDC72AB9D249007B26ED /* MyAccessToken.swift */; };
 		728CD16D2B1039D40066F2FD /* UqudoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 728CD16C2B1039D40066F2FD /* UqudoSDK */; };
 		728CD1702B103A590066F2FD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 728CD16F2B103A590066F2FD /* Alamofire */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7263EF622B43F3DE00A2D176 /* Sample-Swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sample-Swift.entitlements"; sourceTree = "<group>"; };
 		7264EDC72AB9D249007B26ED /* MyAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccessToken.swift; sourceTree = "<group>"; };
 		72C7E4D52AB9C00B00BE84D6 /* Sample-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C7E4D82AB9C00B00BE84D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				728CD1732B10415B0066F2FD /* OpenSSL in Frameworks */,
+				7263EF652B4415FC00A2D176 /* ExceptionCatcher in Frameworks */,
 				728CD16D2B1039D40066F2FD /* UqudoSDK in Frameworks */,
 				728CD1702B103A590066F2FD /* Alamofire in Frameworks */,
 			);
@@ -75,6 +78,7 @@
 		72C7E4D72AB9C00B00BE84D6 /* Sample-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				7263EF622B43F3DE00A2D176 /* Sample-Swift.entitlements */,
 				72C7E4D82AB9C00B00BE84D6 /* AppDelegate.swift */,
 				72C7E4DA2AB9C00B00BE84D6 /* SceneDelegate.swift */,
 				72C7E4DC2AB9C00B00BE84D6 /* ViewController.swift */,
@@ -113,6 +117,7 @@
 				728CD16C2B1039D40066F2FD /* UqudoSDK */,
 				728CD16F2B103A590066F2FD /* Alamofire */,
 				728CD1722B10415B0066F2FD /* OpenSSL */,
+				7263EF642B4415FC00A2D176 /* ExceptionCatcher */,
 			);
 			productName = "Sample-Swift";
 			productReference = 72C7E4D52AB9C00B00BE84D6 /* Sample-Swift.app */;
@@ -147,6 +152,7 @@
 				728CD16B2B1039D40066F2FD /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */,
 				728CD16E2B103A590066F2FD /* XCRemoteSwiftPackageReference "Alamofire" */,
 				728CD1712B10415B0066F2FD /* XCRemoteSwiftPackageReference "OpenSSL" */,
+				7263EF632B4415FC00A2D176 /* XCRemoteSwiftPackageReference "ExceptionCatcher" */,
 			);
 			productRefGroup = 72C7E4D62AB9C00B00BE84D6 /* Products */;
 			projectDirPath = "";
@@ -334,6 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Sample-Swift/Sample-Swift.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QQE69LKY8A;
@@ -369,6 +376,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Sample-Swift/Sample-Swift.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QQE69LKY8A;
@@ -421,6 +429,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7263EF632B4415FC00A2D176 /* XCRemoteSwiftPackageReference "ExceptionCatcher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/ExceptionCatcher";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		728CD16B2B1039D40066F2FD /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/uqudo-io/SPM-UqudoSDK";
@@ -448,6 +464,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7263EF642B4415FC00A2D176 /* ExceptionCatcher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7263EF632B4415FC00A2D176 /* XCRemoteSwiftPackageReference "ExceptionCatcher" */;
+			productName = ExceptionCatcher;
+		};
 		728CD16C2B1039D40066F2FD /* UqudoSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 728CD16B2B1039D40066F2FD /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */;
