@@ -65,30 +65,30 @@ class ViewController: UIViewController, UQBuilderControllerDelegate {
         return readingConfig
     }
 
-    func createPassportDocument() -> UQDocumentConfig {
+    func createDocument() -> UQDocumentConfig {
         // Create document type Passport
-        let passportDoc = UQDocumentConfig(documentType: PASSPORT.rawValue)
+        let docConfig = UQDocumentConfig(documentType: UAE_ID.rawValue)
         
         // Enabling this option allows scanning expired documents
-        passportDoc.disableExpiryValidation = true
+        docConfig.disableExpiryValidation = true
         
         // Enabling this option allows age verification, and if the calculated age from the document is below the defined age, the scan fails and shows a message to the user. Age must be higher than 0 to be considered.
-        passportDoc.enableAgeVerification = 15
+        docConfig.enableAgeVerification = 15
         
         // Add scan configuration
-        passportDoc.scan = createScanConfig()
+        docConfig.scan = createScanConfig()
         
         // Add reading configuration
-        passportDoc.reading = createReadingConfig()
+        docConfig.reading = createReadingConfig()
         
-        return passportDoc
+        return docConfig
     }
 
-    func createFacialRecognitionConfig() -> UQFacialRecognitionConfig {
+    func createFacialRecognitionConfig(enableFacialRecognition: Bool) -> UQFacialRecognitionConfig {
         let config = UQFacialRecognitionConfig()
         
         // Enable facial recognition
-        config.enableFacialRecognition = false
+        config.enableFacialRecognition = enableFacialRecognition
         
         // Enabling this option allows to have closed eyes during facial recognition.
         config.allowClosedEyes = true
@@ -140,14 +140,14 @@ class ViewController: UIViewController, UQBuilderControllerDelegate {
         
         
         // Add document if no document, the UQExceptionMissingDocument throw
-        let passportDocument = self.createPassportDocument()
+        let docConfig = self.createDocument()
         // If reading enable but document is not supported reading the SDK will throw kExceptionReasonDocumentNotSupportReading.
         // If document is not supported enrollment the SDK will throw kExceptionReasonDocumentEnrollmentNotSupport.
-        enrollmentBuilder.add(passportDocument)
+        enrollmentBuilder.add(docConfig)
         
         // Enabling face recognition
-        if passportDocument.isSupportFaceRecognition() {
-            enrollmentBuilder.facialRecognitionConfig = self.createFacialRecognitionConfig()
+        if docConfig.isSupportFaceRecognition() {
+            enrollmentBuilder.facialRecognitionConfig = self.createFacialRecognitionConfig(enableFacialRecognition: true)
         }
 
         // Background Check Configuration id needed
