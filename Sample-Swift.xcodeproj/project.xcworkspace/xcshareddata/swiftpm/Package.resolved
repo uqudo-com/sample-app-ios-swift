@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/uqudo-io/SPM-UqudoSDK",
       "state" : {
-        "revision" : "b1f9d0d41c0ac0630cc5614963a6d8cb052e80cb",
-        "version" : "2.7.2"
+        "revision" : "1902829f36abac47fb9e986de34427715d8518be",
+        "version" : "2.7.4"
       }
     }
   ],
