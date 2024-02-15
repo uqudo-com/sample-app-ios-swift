@@ -32,9 +32,6 @@ class ViewController: UIViewController, UQBuilderControllerDelegate {
         // Disable scanning help page
         scanConfig.disableHelpPage = false
         
-        // You can choose to manually upload your document instead of having it automatically scanned. Simply upload a PDF of the document's image. If the document is two-sided, make sure the first picture is the front side and the second picture is the back side. Enabling this option will automatically disable the reading step.
-        scanConfig.enableUpload = false
-        
         // Specifies the required match level for facial recognition of this document's scanned picture.
         scanConfig.faceMinimumMatchLevel = 3 // Valid number 1-5
         
@@ -48,19 +45,13 @@ class ViewController: UIViewController, UQBuilderControllerDelegate {
         let readingConfig = UQReadingConfig()
         
         // Enable reading for the document, e.g., NFC reading of the chip
-        readingConfig.enableReading = true
+        readingConfig.enableReading = false
         
         // Specifies the required match level for facial recognition of the picture in the chip for this specific document
         readingConfig.faceMinimumMatchLevel = 3 // Valid number 1-5
         
         // Force the reading part. Users will not be able to skip the reading part. Enrollment builder throws an exception if NFC is not supported and force reading is enabled.
         readingConfig.forceReading(false)
-        
-        // Force the reading part only if NFC is supported. Users will not be able to skip if NFC is supported; otherwise, they will be moved to the next step after scanning.
-        readingConfig.forceReadingIfSupported(false)
-        
-        // Set NFC timeout for document reading. If the timeout exceeds, users can skip the NFC step. Only works if force reading is enabled.
-        readingConfig.forceReadingTimeout = 30 // Defines the timeout in seconds
         
         return readingConfig
     }
@@ -140,15 +131,15 @@ class ViewController: UIViewController, UQBuilderControllerDelegate {
         
         
         // Add document if no document, the UQExceptionMissingDocument throw
-        let docConfig = self.createDocument()
+        let uaeid = self.createDocument()
         // If reading enable but document is not supported reading the SDK will throw kExceptionReasonDocumentNotSupportReading.
         // If document is not supported enrollment the SDK will throw kExceptionReasonDocumentEnrollmentNotSupport.
-        enrollmentBuilder.add(docConfig)
+        enrollmentBuilder.add(uaeid)
         
         // Enabling face recognition
-        if docConfig.isSupportFaceRecognition() {
-            enrollmentBuilder.facialRecognitionConfig = self.createFacialRecognitionConfig(enableFacialRecognition: true)
-        }
+//        if docConfig.isSupportFaceRecognition() {
+//            enrollmentBuilder.facialRecognitionConfig = self.createFacialRecognitionConfig(enableFacialRecognition: true)
+//        }
 
         // Background Check Configuration id needed
         // Begin enableBackgroundCheck config.
@@ -172,6 +163,9 @@ class ViewController: UIViewController, UQBuilderControllerDelegate {
         // Begin enableLookup filtered by document type config.
         // enrollmentBuilder.enableLookup([list of lookup document]) // Uncomment if needed
         // End enableLookup filtered by document type config.
+        
+        // Enabling this option allows to exceped screens and printed copies. is disable by default
+        enrollmentBuilder.allowNonPhysicalDocuments = true;
         
         return enrollmentBuilder
     }

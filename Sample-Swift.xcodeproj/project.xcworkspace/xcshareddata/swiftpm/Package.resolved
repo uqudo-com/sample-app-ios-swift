@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/sindresorhus/ExceptionCatcher",
       "state" : {
-        "branch" : "main",
-        "revision" : "81cf83b117ec368e2ebb7fbcd9f7a3deb115ab07"
+        "revision" : "3787f25119e1406b4c5e47fc654626a9d5d7e111",
+        "version" : "1.1.0"
       }
     },
     {
@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/uqudo-io/SPM-UqudoSDK",
       "state" : {
-        "revision" : "1902829f36abac47fb9e986de34427715d8518be",
-        "version" : "2.7.4"
+        "revision" : "42d3eb859024e4c6c4dc12b45b69a0ca9e7f7325",
+        "version" : "3.0.0"
       }
     }
   ],

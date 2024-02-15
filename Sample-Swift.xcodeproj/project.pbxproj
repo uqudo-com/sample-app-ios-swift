@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72007A3A2B7DD59300665351 /* UqudoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 72007A392B7DD59300665351 /* UqudoSDK */; };
 		7263EF652B4415FC00A2D176 /* ExceptionCatcher in Frameworks */ = {isa = PBXBuildFile; productRef = 7263EF642B4415FC00A2D176 /* ExceptionCatcher */; };
 		7264EDC82AB9D24A007B26ED /* MyAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7264EDC72AB9D249007B26ED /* MyAccessToken.swift */; };
-		728CD16D2B1039D40066F2FD /* UqudoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 728CD16C2B1039D40066F2FD /* UqudoSDK */; };
 		728CD1702B103A590066F2FD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 728CD16F2B103A590066F2FD /* Alamofire */; };
 		728CD1732B10415B0066F2FD /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 728CD1722B10415B0066F2FD /* OpenSSL */; };
 		72C7E4D92AB9C00B00BE84D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7E4D82AB9C00B00BE84D6 /* AppDelegate.swift */; };
@@ -49,9 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72007A3A2B7DD59300665351 /* UqudoSDK in Frameworks */,
 				728CD1732B10415B0066F2FD /* OpenSSL in Frameworks */,
 				7263EF652B4415FC00A2D176 /* ExceptionCatcher in Frameworks */,
-				728CD16D2B1039D40066F2FD /* UqudoSDK in Frameworks */,
 				728CD1702B103A590066F2FD /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,11 +59,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72007A382B7DD58F00665351 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		72C7E4CC2AB9C00B00BE84D6 = {
 			isa = PBXGroup;
 			children = (
 				72C7E4D72AB9C00B00BE84D6 /* Sample-Swift */,
 				72C7E4D62AB9C00B00BE84D6 /* Products */,
+				72007A382B7DD58F00665351 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,10 +122,10 @@
 			);
 			name = "Sample-Swift";
 			packageProductDependencies = (
-				728CD16C2B1039D40066F2FD /* UqudoSDK */,
 				728CD16F2B103A590066F2FD /* Alamofire */,
 				728CD1722B10415B0066F2FD /* OpenSSL */,
 				7263EF642B4415FC00A2D176 /* ExceptionCatcher */,
+				72007A392B7DD59300665351 /* UqudoSDK */,
 			);
 			productName = "Sample-Swift";
 			productReference = 72C7E4D52AB9C00B00BE84D6 /* Sample-Swift.app */;
@@ -149,10 +157,10 @@
 			);
 			mainGroup = 72C7E4CC2AB9C00B00BE84D6;
 			packageReferences = (
-				728CD16B2B1039D40066F2FD /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */,
 				728CD16E2B103A590066F2FD /* XCRemoteSwiftPackageReference "Alamofire" */,
 				728CD1712B10415B0066F2FD /* XCRemoteSwiftPackageReference "OpenSSL" */,
 				7263EF632B4415FC00A2D176 /* XCRemoteSwiftPackageReference "ExceptionCatcher" */,
+				72007A372B7DD49E00665351 /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */,
 			);
 			productRefGroup = 72C7E4D62AB9C00B00BE84D6 /* Products */;
 			projectDirPath = "";
@@ -429,20 +437,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		72007A372B7DD49E00665351 /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uqudo-io/SPM-UqudoSDK.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		7263EF632B4415FC00A2D176 /* XCRemoteSwiftPackageReference "ExceptionCatcher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/ExceptionCatcher";
 			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		728CD16B2B1039D40066F2FD /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/uqudo-io/SPM-UqudoSDK";
-			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.7.2;
+				minimumVersion = 1.0.0;
 			};
 		};
 		728CD16E2B103A590066F2FD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
@@ -464,15 +472,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		72007A392B7DD59300665351 /* UqudoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72007A372B7DD49E00665351 /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */;
+			productName = UqudoSDK;
+		};
 		7263EF642B4415FC00A2D176 /* ExceptionCatcher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7263EF632B4415FC00A2D176 /* XCRemoteSwiftPackageReference "ExceptionCatcher" */;
 			productName = ExceptionCatcher;
-		};
-		728CD16C2B1039D40066F2FD /* UqudoSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 728CD16B2B1039D40066F2FD /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */;
-			productName = UqudoSDK;
 		};
 		728CD16F2B103A590066F2FD /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
