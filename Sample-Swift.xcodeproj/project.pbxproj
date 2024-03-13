@@ -442,7 +442,7 @@
 			repositoryURL = "https://github.com/uqudo-io/SPM-UqudoSDK.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
+				minimumVersion = 3.0.1;
 			};
 		};
 		7263EF632B4415FC00A2D176 /* XCRemoteSwiftPackageReference "ExceptionCatcher" */ = {
