@@ -14,6 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private var myAccessToken = MyAccessToken()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        
+        print("didFinishLaunchingWithOptions")
         self.initUqudoBuilder()
         self.requestAccesToken()
         return true
