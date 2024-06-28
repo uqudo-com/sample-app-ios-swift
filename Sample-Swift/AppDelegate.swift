@@ -14,8 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private var myAccessToken = MyAccessToken()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        
-        print("didFinishLaunchingWithOptions")
+        return true
+    }
+    
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         self.initUqudoBuilder()
         self.requestAccesToken()
         return true
@@ -38,13 +40,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func requestAccesToken() {
         self.myAccessToken.requestAccessToken { (accessToken: String? , error: Error?) in
             self.accessToken = accessToken;
-            print("accessToken: \(self.accessToken ?? "No value")")
         }
     }
 
     func initUqudoBuilder() {
         print("SDK version :\(UQBuilderController.getSDKVersion())")
-        let tracer = UQTracer()
+        let tracer = MyTracer()
         _ = UQBuilderController.init(tracer: tracer)
     }
 

@@ -10,6 +10,11 @@
 		72007A3A2B7DD59300665351 /* UqudoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 72007A392B7DD59300665351 /* UqudoSDK */; };
 		7263EF652B4415FC00A2D176 /* ExceptionCatcher in Frameworks */ = {isa = PBXBuildFile; productRef = 7263EF642B4415FC00A2D176 /* ExceptionCatcher */; };
 		7264EDC82AB9D24A007B26ED /* MyAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7264EDC72AB9D249007B26ED /* MyAccessToken.swift */; };
+		7266209F2C2EAFF000012331 /* MyTracer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7266209E2C2EAFF000012331 /* MyTracer.swift */; };
+		726620A82C2EE06800012331 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 726620A22C2EE06800012331 /* Poppins-Medium.ttf */; };
+		726620AA2C2EE06800012331 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 726620A42C2EE06800012331 /* Poppins-Bold.ttf */; };
+		726620AC2C2EE06800012331 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 726620A62C2EE06800012331 /* Poppins-Regular.ttf */; };
+		726620B02C2EE68500012331 /* MyTraceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726620AF2C2EE68500012331 /* MyTraceInfo.swift */; };
 		728CD1702B103A590066F2FD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 728CD16F2B103A590066F2FD /* Alamofire */; };
 		728CD1732B10415B0066F2FD /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 728CD1722B10415B0066F2FD /* OpenSSL */; };
 		72C7E4D92AB9C00B00BE84D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7E4D82AB9C00B00BE84D6 /* AppDelegate.swift */; };
@@ -18,8 +23,6 @@
 		72C7E4E02AB9C00B00BE84D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C7E4DE2AB9C00B00BE84D6 /* Main.storyboard */; };
 		72C7E4E22AB9C00E00BE84D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C7E4E12AB9C00E00BE84D6 /* Assets.xcassets */; };
 		72C7E4E52AB9C00E00BE84D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C7E4E32AB9C00E00BE84D6 /* LaunchScreen.storyboard */; };
-		72D7B1192AB9CBF700473DCE /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 72D7B1182AB9CBF700473DCE /* fonts */; };
-		72D7B11C2AB9CC9C00473DCE /* MyTracer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D7B11B2AB9CC9C00473DCE /* MyTracer.m */; };
 		72D7B1202AB9CCBF00473DCE /* uq-styles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72D7B11D2AB9CCBF00473DCE /* uq-styles.plist */; };
 		72D7B1212AB9CCBF00473DCE /* uq-text.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72D7B11E2AB9CCBF00473DCE /* uq-text.plist */; };
 		72D7B1222AB9CCBF00473DCE /* uq-styles-dark.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72D7B11F2AB9CCBF00473DCE /* uq-styles-dark.plist */; };
@@ -28,6 +31,11 @@
 /* Begin PBXFileReference section */
 		7263EF622B43F3DE00A2D176 /* Sample-Swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sample-Swift.entitlements"; sourceTree = "<group>"; };
 		7264EDC72AB9D249007B26ED /* MyAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccessToken.swift; sourceTree = "<group>"; };
+		7266209E2C2EAFF000012331 /* MyTracer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTracer.swift; sourceTree = "<group>"; };
+		726620A22C2EE06800012331 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		726620A42C2EE06800012331 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		726620A62C2EE06800012331 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		726620AF2C2EE68500012331 /* MyTraceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTraceInfo.swift; sourceTree = "<group>"; };
 		72C7E4D52AB9C00B00BE84D6 /* Sample-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C7E4D82AB9C00B00BE84D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72C7E4DA2AB9C00B00BE84D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,9 +44,7 @@
 		72C7E4E12AB9C00E00BE84D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72C7E4E42AB9C00E00BE84D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72C7E4E62AB9C00E00BE84D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72D7B1182AB9CBF700473DCE /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		72D7B11A2AB9CC9B00473DCE /* Sample-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sample-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
-		72D7B11B2AB9CC9C00473DCE /* MyTracer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTracer.m; sourceTree = "<group>"; };
 		72D7B11D2AB9CCBF00473DCE /* uq-styles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "uq-styles.plist"; sourceTree = "<group>"; };
 		72D7B11E2AB9CCBF00473DCE /* uq-text.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "uq-text.plist"; sourceTree = "<group>"; };
 		72D7B11F2AB9CCBF00473DCE /* uq-styles-dark.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "uq-styles-dark.plist"; sourceTree = "<group>"; };
@@ -66,6 +72,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		726620AE2C2EE15900012331 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				726620A42C2EE06800012331 /* Poppins-Bold.ttf */,
+				726620A22C2EE06800012331 /* Poppins-Medium.ttf */,
+				726620A62C2EE06800012331 /* Poppins-Regular.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
 		72C7E4CC2AB9C00B00BE84D6 = {
 			isa = PBXGroup;
 			children = (
@@ -91,8 +107,10 @@
 				72C7E4DA2AB9C00B00BE84D6 /* SceneDelegate.swift */,
 				72C7E4DC2AB9C00B00BE84D6 /* ViewController.swift */,
 				7264EDC72AB9D249007B26ED /* MyAccessToken.swift */,
+				7266209E2C2EAFF000012331 /* MyTracer.swift */,
+				726620AF2C2EE68500012331 /* MyTraceInfo.swift */,
 				72C7E4DE2AB9C00B00BE84D6 /* Main.storyboard */,
-				72D7B11B2AB9CC9C00473DCE /* MyTracer.m */,
+				726620AE2C2EE15900012331 /* font */,
 				72C7E4E12AB9C00E00BE84D6 /* Assets.xcassets */,
 				72C7E4E32AB9C00E00BE84D6 /* LaunchScreen.storyboard */,
 				72D7B11A2AB9CC9B00473DCE /* Sample-Swift-Bridging-Header.h */,
@@ -100,7 +118,6 @@
 				72D7B11F2AB9CCBF00473DCE /* uq-styles-dark.plist */,
 				72D7B11D2AB9CCBF00473DCE /* uq-styles.plist */,
 				72D7B11E2AB9CCBF00473DCE /* uq-text.plist */,
-				72D7B1182AB9CBF700473DCE /* fonts */,
 			);
 			path = "Sample-Swift";
 			sourceTree = "<group>";
@@ -177,11 +194,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				72C7E4E52AB9C00E00BE84D6 /* LaunchScreen.storyboard in Resources */,
+				726620AA2C2EE06800012331 /* Poppins-Bold.ttf in Resources */,
+				726620A82C2EE06800012331 /* Poppins-Medium.ttf in Resources */,
 				72D7B1212AB9CCBF00473DCE /* uq-text.plist in Resources */,
 				72C7E4E22AB9C00E00BE84D6 /* Assets.xcassets in Resources */,
 				72D7B1222AB9CCBF00473DCE /* uq-styles-dark.plist in Resources */,
 				72C7E4E02AB9C00B00BE84D6 /* Main.storyboard in Resources */,
-				72D7B1192AB9CBF700473DCE /* fonts in Resources */,
+				726620AC2C2EE06800012331 /* Poppins-Regular.ttf in Resources */,
 				72D7B1202AB9CCBF00473DCE /* uq-styles.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,7 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72D7B11C2AB9CC9C00473DCE /* MyTracer.m in Sources */,
+				726620B02C2EE68500012331 /* MyTraceInfo.swift in Sources */,
+				7266209F2C2EAFF000012331 /* MyTracer.swift in Sources */,
 				72C7E4DD2AB9C00B00BE84D6 /* ViewController.swift in Sources */,
 				72C7E4D92AB9C00B00BE84D6 /* AppDelegate.swift in Sources */,
 				7264EDC82AB9D24A007B26ED /* MyAccessToken.swift in Sources */,
@@ -275,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -332,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

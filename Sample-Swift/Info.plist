@@ -45,13 +45,11 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Poppins-Regular.ttf</string>
-		<string>Poppins-Light.ttf</string>
 		<string>Poppins-Medium.ttf</string>
 		<string>Poppins-Bold.ttf</string>
-		<string>Poppins-SemiBold.ttf</string>
 	</array>
-    <key>UQApiBaseURL</key>
-    <string>https://id.dev.uqudo.io</string>
+	<key>UQApiBaseURL</key>
+	<string>https://id.dev.uqudo.io</string>
 	<key>com.apple.developer.nfc.readersession.formats</key>
 	<array>
 		<string>NDEF</string>
