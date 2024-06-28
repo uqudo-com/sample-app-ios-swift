@@ -4,6 +4,10 @@
 //
 //  Created by NooN on 19/9/23.
 //
+// *****This is only for demo purposes only!!!!
+// Retrieve the authorization token using oauth2 client credentials grant type.
+// Don’t perform this operation inside your mobile application but only from your backend
+// For detail, please check on document https://docs.uqudo.com/docs/uqudo-api/authorisation
 
 import Foundation
 import Alamofire
