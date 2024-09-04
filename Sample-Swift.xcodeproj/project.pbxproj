@@ -15,6 +15,7 @@
 		726620AA2C2EE06800012331 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 726620A42C2EE06800012331 /* Poppins-Bold.ttf */; };
 		726620AC2C2EE06800012331 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 726620A62C2EE06800012331 /* Poppins-Regular.ttf */; };
 		726620B02C2EE68500012331 /* MyTraceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726620AF2C2EE68500012331 /* MyTraceInfo.swift */; };
+		728BF9332C88863F00EC105D /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = 728BF9322C88863F00EC105D /* JWTDecode */; };
 		728CD1702B103A590066F2FD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 728CD16F2B103A590066F2FD /* Alamofire */; };
 		728CD1732B10415B0066F2FD /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 728CD1722B10415B0066F2FD /* OpenSSL */; };
 		72C7E4D92AB9C00B00BE84D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7E4D82AB9C00B00BE84D6 /* AppDelegate.swift */; };
@@ -58,6 +59,7 @@
 				72007A3A2B7DD59300665351 /* UqudoSDK in Frameworks */,
 				728CD1732B10415B0066F2FD /* OpenSSL in Frameworks */,
 				7263EF652B4415FC00A2D176 /* ExceptionCatcher in Frameworks */,
+				728BF9332C88863F00EC105D /* JWTDecode in Frameworks */,
 				728CD1702B103A590066F2FD /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +145,7 @@
 				728CD1722B10415B0066F2FD /* OpenSSL */,
 				7263EF642B4415FC00A2D176 /* ExceptionCatcher */,
 				72007A392B7DD59300665351 /* UqudoSDK */,
+				728BF9322C88863F00EC105D /* JWTDecode */,
 			);
 			productName = "Sample-Swift";
 			productReference = 72C7E4D52AB9C00B00BE84D6 /* Sample-Swift.app */;
@@ -178,6 +181,7 @@
 				728CD1712B10415B0066F2FD /* XCRemoteSwiftPackageReference "OpenSSL" */,
 				7263EF632B4415FC00A2D176 /* XCRemoteSwiftPackageReference "ExceptionCatcher" */,
 				72007A372B7DD49E00665351 /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */,
+				728BF9312C88863F00EC105D /* XCRemoteSwiftPackageReference "JWTDecode" */,
 			);
 			productRefGroup = 72C7E4D62AB9C00B00BE84D6 /* Products */;
 			projectDirPath = "";
@@ -473,6 +477,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		728BF9312C88863F00EC105D /* XCRemoteSwiftPackageReference "JWTDecode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/JWTDecode.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
 		728CD16E2B103A590066F2FD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -501,6 +513,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7263EF632B4415FC00A2D176 /* XCRemoteSwiftPackageReference "ExceptionCatcher" */;
 			productName = ExceptionCatcher;
+		};
+		728BF9322C88863F00EC105D /* JWTDecode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 728BF9312C88863F00EC105D /* XCRemoteSwiftPackageReference "JWTDecode" */;
+			productName = JWTDecode;
 		};
 		728CD16F2B103A590066F2FD /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

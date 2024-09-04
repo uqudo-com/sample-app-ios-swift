@@ -7,6 +7,7 @@
 
 import UIKit
 import ExceptionCatcher
+import JWTDecode
 
 class ViewController: UIViewController, UQBuilderControllerDelegate {
 
@@ -218,13 +219,35 @@ class ViewController: UIViewController, UQBuilderControllerDelegate {
 extension ViewController {
     
     func didEnrollmentComplete(withInfo info: String) {
-        print("didEnrollmentComplete ")
-        print(info)
-        performSegue(withIdentifier: "enrollmentComplete", sender: self)
+        print("didEnrollmentComplete")
+        do {
+            let decodedResult = try decode(jwt: info)
+            // Use decodedResult
+            print("encoded result: \(info)")
+            print("decoded result: \(decodedResult)")
+            performSegue(withIdentifier: "enrollmentComplete", sender: self)
+        } catch {
+            print("Error decoding JWT: \(error)")
+        }
     }
 
     func didEnrollmentIncomplete(with status: UQSessionStatus) {
-        print(status)
+        print("didEnrollmentIncomplete")
+        print("status code: \(status.statusCode)")
+        print("status task: \(status.statusTask)")
+        print("status message: \(status.message ?? "")")
+        if let info = status.data {
+            do {
+                let decodedResult = try decode(jwt: info)
+                // Use decodedResult
+                print("encoded result: \(info)")
+                print("decoded result: \(decodedResult)")
+            } catch {
+                print("Error decoding JWT: \(error)")
+            }
+        } else {
+            print("Data is nil")
+        }
     }
 
     func didEnrollmentFailWithError(_ error: Error) {
