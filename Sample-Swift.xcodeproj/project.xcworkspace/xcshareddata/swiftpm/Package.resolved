@@ -1,5 +1,5 @@
 {
-  "originHash" : "665056d3da894210418d2e51f2fb807caefc309e8051738a432ff8cb0836bef2",
+  "originHash" : "7f3fd94e7ecc1cedcc475b29d06521a590a19d5daaf2b115a510feb0c4899bec",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -42,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/uqudo-io/SPM-UqudoSDK.git",
       "state" : {
-        "revision" : "cd1ced03e5170ab5b38be0125c6ac6d0368207de",
-        "version" : "3.1.3"
+        "revision" : "19c88626932314b6b17f5beeb7869b610f4d0c9c",
+        "version" : "3.2.0"
       }
     }
   ],
