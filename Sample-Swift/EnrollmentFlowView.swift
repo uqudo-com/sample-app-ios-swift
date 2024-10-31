@@ -1,15 +1,16 @@
 //
-//  ViewController.swift
+//  EnrollmentFlow.swift
 //  Sample-Swift
 //
-//  Created by NooN on 19/9/23.
+//  Created by NooN on 31/10/24.
 //
 
+import Foundation
 import UIKit
 import ExceptionCatcher
 import JWTDecode
 
-class ViewController: UIViewController, UQBuilderControllerDelegate {
+class EnrollmentFlowView: UIViewController, UQBuilderControllerDelegate {
 
     @IBOutlet weak var startButton: UIButton!
     
@@ -210,13 +211,13 @@ class ViewController: UIViewController, UQBuilderControllerDelegate {
         }
     }
     
-    @IBAction func stratOnBording(_ sender: UIButton) {
+    @IBAction func startOnBording(_ sender: UIButton) {
         self.performingEnrollment()
     }
 }
 
 
-extension ViewController {
+extension EnrollmentFlowView {
     
     func didEnrollmentComplete(withInfo info: String) {
         print("didEnrollmentComplete")
