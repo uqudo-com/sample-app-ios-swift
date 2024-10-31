@@ -121,7 +121,7 @@ class FaceSessionFlowView: UIViewController, UQBuilderControllerDelegate {
             // Error Description represent exception reason
             print("Error:", error.localizedDescription)
             debugPrint(error)
-            self.showExceptionError(title: error.domain, message: error.localizedDescription)
+            self.showError(title: error.domain, message: error.localizedDescription)
         }
     }
     
@@ -150,6 +150,7 @@ extension FaceSessionFlowView {
         print("status code: \(status.statusCode)")
         print("status task: \(status.statusTask)")
         print("status message: \(status.message ?? "")")
+        
         if let info = status.data {
             do {
                 let decodedResult = try decode(jwt: info)
@@ -162,13 +163,14 @@ extension FaceSessionFlowView {
         } else {
             print("Data is nil")
         }
+        self.showError(title: "Face Session Incomplete", message: status.message ?? "")
     }
 
     func didFaceSessionFail(_ error: Error) {
         print(error)
     }
     
-    func showExceptionError(title: String, message: String) {
+    func showError(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Continue", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
