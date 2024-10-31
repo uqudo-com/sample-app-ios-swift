@@ -7,20 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		72007A3A2B7DD59300665351 /* UqudoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 72007A392B7DD59300665351 /* UqudoSDK */; };
-		7263EF652B4415FC00A2D176 /* ExceptionCatcher in Frameworks */ = {isa = PBXBuildFile; productRef = 7263EF642B4415FC00A2D176 /* ExceptionCatcher */; };
 		7264EDC82AB9D24A007B26ED /* MyAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7264EDC72AB9D249007B26ED /* MyAccessToken.swift */; };
 		7266209F2C2EAFF000012331 /* MyTracer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7266209E2C2EAFF000012331 /* MyTracer.swift */; };
 		726620A82C2EE06800012331 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 726620A22C2EE06800012331 /* Poppins-Medium.ttf */; };
 		726620AA2C2EE06800012331 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 726620A42C2EE06800012331 /* Poppins-Bold.ttf */; };
 		726620AC2C2EE06800012331 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 726620A62C2EE06800012331 /* Poppins-Regular.ttf */; };
 		726620B02C2EE68500012331 /* MyTraceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726620AF2C2EE68500012331 /* MyTraceInfo.swift */; };
-		728BF9332C88863F00EC105D /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = 728BF9322C88863F00EC105D /* JWTDecode */; };
-		728CD1702B103A590066F2FD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 728CD16F2B103A590066F2FD /* Alamofire */; };
-		728CD1732B10415B0066F2FD /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 728CD1722B10415B0066F2FD /* OpenSSL */; };
+		727737A72CD37F190086DFF7 /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = 727737A62CD37F190086DFF7 /* JWTDecode */; };
+		727737AF2CD37F810086DFF7 /* ExceptionCatcher in Frameworks */ = {isa = PBXBuildFile; productRef = 727737AE2CD37F810086DFF7 /* ExceptionCatcher */; };
+		727737B82CD381120086DFF7 /* UqudoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 727737B72CD381120086DFF7 /* UqudoSDK */; };
+		727737BB2CD381590086DFF7 /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 727737BA2CD381590086DFF7 /* OpenSSL */; };
+		727737C32CD3834C0086DFF7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 727737C22CD3834C0086DFF7 /* Alamofire */; };
+		727737C52CD386720086DFF7 /* EnrollmentFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727737C42CD386720086DFF7 /* EnrollmentFlowView.swift */; };
+		727737C72CD389F70086DFF7 /* FaceSessionFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727737C62CD389F70086DFF7 /* FaceSessionFlowView.swift */; };
 		72C7E4D92AB9C00B00BE84D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7E4D82AB9C00B00BE84D6 /* AppDelegate.swift */; };
 		72C7E4DB2AB9C00B00BE84D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7E4DA2AB9C00B00BE84D6 /* SceneDelegate.swift */; };
-		72C7E4DD2AB9C00B00BE84D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C7E4DC2AB9C00B00BE84D6 /* ViewController.swift */; };
 		72C7E4E02AB9C00B00BE84D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C7E4DE2AB9C00B00BE84D6 /* Main.storyboard */; };
 		72C7E4E22AB9C00E00BE84D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C7E4E12AB9C00E00BE84D6 /* Assets.xcassets */; };
 		72C7E4E52AB9C00E00BE84D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C7E4E32AB9C00E00BE84D6 /* LaunchScreen.storyboard */; };
@@ -37,10 +38,11 @@
 		726620A42C2EE06800012331 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		726620A62C2EE06800012331 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		726620AF2C2EE68500012331 /* MyTraceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTraceInfo.swift; sourceTree = "<group>"; };
+		727737C42CD386720086DFF7 /* EnrollmentFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentFlowView.swift; sourceTree = "<group>"; };
+		727737C62CD389F70086DFF7 /* FaceSessionFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceSessionFlowView.swift; sourceTree = "<group>"; };
 		72C7E4D52AB9C00B00BE84D6 /* Sample-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C7E4D82AB9C00B00BE84D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72C7E4DA2AB9C00B00BE84D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		72C7E4DC2AB9C00B00BE84D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		72C7E4DF2AB9C00B00BE84D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72C7E4E12AB9C00E00BE84D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72C7E4E42AB9C00E00BE84D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,11 +58,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72007A3A2B7DD59300665351 /* UqudoSDK in Frameworks */,
-				728CD1732B10415B0066F2FD /* OpenSSL in Frameworks */,
-				7263EF652B4415FC00A2D176 /* ExceptionCatcher in Frameworks */,
-				728BF9332C88863F00EC105D /* JWTDecode in Frameworks */,
-				728CD1702B103A590066F2FD /* Alamofire in Frameworks */,
+				727737C32CD3834C0086DFF7 /* Alamofire in Frameworks */,
+				727737AF2CD37F810086DFF7 /* ExceptionCatcher in Frameworks */,
+				727737B82CD381120086DFF7 /* UqudoSDK in Frameworks */,
+				727737BB2CD381590086DFF7 /* OpenSSL in Frameworks */,
+				727737A72CD37F190086DFF7 /* JWTDecode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,8 +109,9 @@
 				7263EF622B43F3DE00A2D176 /* Sample-Swift.entitlements */,
 				72C7E4D82AB9C00B00BE84D6 /* AppDelegate.swift */,
 				72C7E4DA2AB9C00B00BE84D6 /* SceneDelegate.swift */,
-				72C7E4DC2AB9C00B00BE84D6 /* ViewController.swift */,
 				7264EDC72AB9D249007B26ED /* MyAccessToken.swift */,
+				727737C42CD386720086DFF7 /* EnrollmentFlowView.swift */,
+				727737C62CD389F70086DFF7 /* FaceSessionFlowView.swift */,
 				7266209E2C2EAFF000012331 /* MyTracer.swift */,
 				726620AF2C2EE68500012331 /* MyTraceInfo.swift */,
 				72C7E4DE2AB9C00B00BE84D6 /* Main.storyboard */,
@@ -141,11 +144,11 @@
 			);
 			name = "Sample-Swift";
 			packageProductDependencies = (
-				728CD16F2B103A590066F2FD /* Alamofire */,
-				728CD1722B10415B0066F2FD /* OpenSSL */,
-				7263EF642B4415FC00A2D176 /* ExceptionCatcher */,
-				72007A392B7DD59300665351 /* UqudoSDK */,
-				728BF9322C88863F00EC105D /* JWTDecode */,
+				727737A62CD37F190086DFF7 /* JWTDecode */,
+				727737AE2CD37F810086DFF7 /* ExceptionCatcher */,
+				727737B72CD381120086DFF7 /* UqudoSDK */,
+				727737BA2CD381590086DFF7 /* OpenSSL */,
+				727737C22CD3834C0086DFF7 /* Alamofire */,
 			);
 			productName = "Sample-Swift";
 			productReference = 72C7E4D52AB9C00B00BE84D6 /* Sample-Swift.app */;
@@ -177,11 +180,11 @@
 			);
 			mainGroup = 72C7E4CC2AB9C00B00BE84D6;
 			packageReferences = (
-				728CD16E2B103A590066F2FD /* XCRemoteSwiftPackageReference "Alamofire" */,
-				728CD1712B10415B0066F2FD /* XCRemoteSwiftPackageReference "OpenSSL" */,
-				7263EF632B4415FC00A2D176 /* XCRemoteSwiftPackageReference "ExceptionCatcher" */,
-				72007A372B7DD49E00665351 /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */,
-				728BF9312C88863F00EC105D /* XCRemoteSwiftPackageReference "JWTDecode" */,
+				727737A52CD37F190086DFF7 /* XCRemoteSwiftPackageReference "JWTDecode" */,
+				727737AD2CD37F810086DFF7 /* XCRemoteSwiftPackageReference "ExceptionCatcher" */,
+				727737B62CD381120086DFF7 /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */,
+				727737B92CD381590086DFF7 /* XCRemoteSwiftPackageReference "OpenSSL" */,
+				727737C12CD3834C0086DFF7 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 72C7E4D62AB9C00B00BE84D6 /* Products */;
 			projectDirPath = "";
@@ -216,9 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				727737C52CD386720086DFF7 /* EnrollmentFlowView.swift in Sources */,
 				726620B02C2EE68500012331 /* MyTraceInfo.swift in Sources */,
 				7266209F2C2EAFF000012331 /* MyTracer.swift in Sources */,
-				72C7E4DD2AB9C00B00BE84D6 /* ViewController.swift in Sources */,
+				727737C72CD389F70086DFF7 /* FaceSessionFlowView.swift in Sources */,
 				72C7E4D92AB9C00B00BE84D6 /* AppDelegate.swift in Sources */,
 				7264EDC82AB9D24A007B26ED /* MyAccessToken.swift in Sources */,
 				72C7E4DB2AB9C00B00BE84D6 /* SceneDelegate.swift in Sources */,
@@ -383,7 +387,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -419,7 +423,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,73 +465,74 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		72007A372B7DD49E00665351 /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/uqudo-io/SPM-UqudoSDK.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.1;
-			};
-		};
-		7263EF632B4415FC00A2D176 /* XCRemoteSwiftPackageReference "ExceptionCatcher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sindresorhus/ExceptionCatcher";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-		728BF9312C88863F00EC105D /* XCRemoteSwiftPackageReference "JWTDecode" */ = {
+		727737A52CD37F190086DFF7 /* XCRemoteSwiftPackageReference "JWTDecode" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/auth0/JWTDecode.swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.1.0;
+				minimumVersion = 3.2.0;
 			};
 		};
-		728CD16E2B103A590066F2FD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		727737AD2CD37F810086DFF7 /* XCRemoteSwiftPackageReference "ExceptionCatcher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/ExceptionCatcher";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		727737B62CD381120086DFF7 /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uqudo-io/SPM-UqudoSDK.git";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 3.2.0;
+				minimumVersion = 3.1.3;
+			};
+		};
+		727737B92CD381590086DFF7 /* XCRemoteSwiftPackageReference "OpenSSL" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/OpenSSL.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.1.2301;
+			};
+		};
+		727737C12CD3834C0086DFF7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.8.1;
-			};
-		};
-		728CD1712B10415B0066F2FD /* XCRemoteSwiftPackageReference "OpenSSL" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/krzyzanowskim/OpenSSL.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.1.4000;
+				minimumVersion = 5.10.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		72007A392B7DD59300665351 /* UqudoSDK */ = {
+		727737A62CD37F190086DFF7 /* JWTDecode */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 72007A372B7DD49E00665351 /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */;
-			productName = UqudoSDK;
-		};
-		7263EF642B4415FC00A2D176 /* ExceptionCatcher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7263EF632B4415FC00A2D176 /* XCRemoteSwiftPackageReference "ExceptionCatcher" */;
-			productName = ExceptionCatcher;
-		};
-		728BF9322C88863F00EC105D /* JWTDecode */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 728BF9312C88863F00EC105D /* XCRemoteSwiftPackageReference "JWTDecode" */;
+			package = 727737A52CD37F190086DFF7 /* XCRemoteSwiftPackageReference "JWTDecode" */;
 			productName = JWTDecode;
 		};
-		728CD16F2B103A590066F2FD /* Alamofire */ = {
+		727737AE2CD37F810086DFF7 /* ExceptionCatcher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 728CD16E2B103A590066F2FD /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
+			package = 727737AD2CD37F810086DFF7 /* XCRemoteSwiftPackageReference "ExceptionCatcher" */;
+			productName = ExceptionCatcher;
 		};
-		728CD1722B10415B0066F2FD /* OpenSSL */ = {
+		727737B72CD381120086DFF7 /* UqudoSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 728CD1712B10415B0066F2FD /* XCRemoteSwiftPackageReference "OpenSSL" */;
+			package = 727737B62CD381120086DFF7 /* XCRemoteSwiftPackageReference "SPM-UqudoSDK" */;
+			productName = UqudoSDK;
+		};
+		727737BA2CD381590086DFF7 /* OpenSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 727737B92CD381590086DFF7 /* XCRemoteSwiftPackageReference "OpenSSL" */;
 			productName = OpenSSL;
+		};
+		727737C22CD3834C0086DFF7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 727737C12CD3834C0086DFF7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

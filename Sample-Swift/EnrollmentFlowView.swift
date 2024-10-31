@@ -1,15 +1,16 @@
 //
-//  ViewController.swift
+//  EnrollmentFlow.swift
 //  Sample-Swift
 //
-//  Created by NooN on 19/9/23.
+//  Created by NooN on 31/10/24.
 //
 
+import Foundation
 import UIKit
 import ExceptionCatcher
 import JWTDecode
 
-class ViewController: UIViewController, UQBuilderControllerDelegate {
+class EnrollmentFlowView: UIViewController, UQBuilderControllerDelegate {
 
     @IBOutlet weak var startButton: UIButton!
     
@@ -206,17 +207,17 @@ class ViewController: UIViewController, UQBuilderControllerDelegate {
             // Error Description represent exception reason
             print("Error:", error.localizedDescription)
             debugPrint(error)
-            self.showExceptionError(title: error.domain, message: error.localizedDescription)
+            self.showError(title: error.domain, message: error.localizedDescription)
         }
     }
     
-    @IBAction func stratOnBording(_ sender: UIButton) {
+    @IBAction func startOnBording(_ sender: UIButton) {
         self.performingEnrollment()
     }
 }
 
 
-extension ViewController {
+extension EnrollmentFlowView {
     
     func didEnrollmentComplete(withInfo info: String) {
         print("didEnrollmentComplete")
@@ -248,16 +249,18 @@ extension ViewController {
         } else {
             print("Data is nil")
         }
+        
+        self.showError(title: "Enrollment Incomplete", message: status.message ?? "")
     }
 
     func didEnrollmentFailWithError(_ error: Error) {
         print(error)
     }
     
-    
-    func showExceptionError(title: String, message: String) {
+    func showError(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Continue", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
+
 }
